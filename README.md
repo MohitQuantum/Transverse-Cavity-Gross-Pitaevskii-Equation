@@ -6,16 +6,15 @@
 
 
  From equation (\ref{3D GPE}) and adding contribution from Harmonic Trap, we have:
-i\hbar\frac{\partial {\Psi(\bm{r}, t)}}{\partial t} = \left[\frac{-\hbar^2}{2m}\nabla^2 + Fz + \frac{g^2_0|\alpha|^2}{\Delta_a}e^{-\frac{r^2}{w^2}}\cos^2{kz} + \frac{1}{2}m\omega^2_\perp(x^2 + y^2) + \frac{1}{2}m\omega^2z^2 + NU|\Psi|^2 \right]\Psi(\bm{r}, t)
+$$i\hbar\frac{\partial {\Psi(\bm{r}, t)}}{\partial t} = \left[\frac{-\hbar^2}{2m}\nabla^2 + Fz + \frac{g^2_0|\alpha|^2}{\Delta_a}e^{-\frac{r^2}{w^2}}\cos^2{kz} + \frac{1}{2}m\omega^2_\perp(x^2 + y^2) + \frac{1}{2}m\omega^2z^2 + NU|\Psi|^2 \right]\Psi(\bm{r}, t)$$
 
 Above equation gives us the opportunity to exploit cylindrical symmetry of the system by using cylindrical coordinates $(r, \theta, z)$.
 
 $$\Psi(\bm{r}, t) = \exp(i m\theta)\psi(r, z, t)$$
 But for ground state, $m = 0 \Rightarrow e^{im\theta} = 1 $
 
-\begin{equation}\label{GPE cylinder}
-    i\hbar\frac{\partial {\psi(r, z, t)}}{\partial t} = \left[\frac{-\hbar^2}{2m}\nabla_{rz}^2 + Fz + \frac{g^2_0|\alpha|^2}{\Delta_a}e^{-\frac{r^2}{w^2}}\cos^2{kz} + \frac{1}{2}m\omega^2_\perp r^2 + \frac{1}{2}m\omega^2z^2 + NU|\psi|^2 \right]\psi(r, z, t)
-\end{equation}
+
+$$i\hbar\frac{\partial {\psi(r, z, t)}}{\partial t} = \left[\frac{-\hbar^2}{2m}\nabla_{rz}^2 + Fz + \frac{g^2_0|\alpha|^2}{\Delta_a}e^{-\frac{r^2}{w^2}}\cos^2{kz} + \frac{1}{2}m\omega^2_\perp r^2 + \frac{1}{2}m\omega^2z^2 + NU|\psi|^2 \right]\psi(r, z, t)$$
 
 So, methods given in \cite{3952136, PhysRevA.74.013623} suggests how to deal with this numerically.
 
